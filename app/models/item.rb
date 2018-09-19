@@ -6,7 +6,7 @@ class Item < ApplicationRecord
 
   def self.most_sold(quantity = 3)
     select("items.*, sum(invoice_items.quantity) AS sold_items")
-    .joins(:invoice_items, invoices: [:transactions])
+    .joins(invoices: :transactions)
     .merge(Transaction.success)
     .group(:id)
     .order("sold_items DESC")

@@ -1,6 +1,6 @@
 # Rales-Engine
 
-Rales-Engine is a restful API built using ruby, rails, and active record. Company sales data was imported from multiple CSV files and seeded in the database. For each API route, the data was serialized to meet the project spec and then presented to the user in JSON format. (Scroll down to view all endpoints and links to API deployed on heroku.)
+Rales-Engine is a restful API built using ruby, rails, and active record. It is a JSON API which exposes a companies sales data schema. Company sales data was imported from multiple CSV files and seeded in the database. For each API route, the data was serialized to meet the spec and then presented to the user in JSON format. (Scroll down to view all endpoints and links to API deployed on heroku.)
 
 ### Accessing Rales-Engine
 ```

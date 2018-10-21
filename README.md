@@ -1,5 +1,4 @@
 # Rales-Engine
-[Project Spec](http://backend.turing.io/module3/projects/rails_engine "Project Spec")
 
 Rales-Engine is a restful API built using ruby, rails, and active record. Company sales data was imported from multiple CSV files and seeded in the database. For each API route, the data was serialized to meet the project spec and then presented to the user in JSON format.  
 

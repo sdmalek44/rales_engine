@@ -60,7 +60,7 @@ class Merchant < ApplicationRecord
     .merge(Transaction.success)
     .group(:id)
     .order("item_total DESC")
-    .limit(quantity.to_i)
+    .limit(quantity)
   end
 
   def self.master_revenue(date = nil)

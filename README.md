@@ -1,4 +1,5 @@
 # Rales-Engine  
+[![Build Status](https://travis-ci.com/sdmalek44/rales_engine.svg?branch=master)](https://travis-ci.com/sdmalek44/rales_engine)
 [![Maintainability](https://api.codeclimate.com/v1/badges/d73e544fcb4ea6e46594/maintainability)](https://codeclimate.com/github/sdmalek44/rales_engine/maintainability)
 
 Rales-Engine is a restful API built using ruby, rails, and active record. It is a JSON API which exposes a companies sales data schema. Company sales data was imported from multiple CSV files and seeded in the database. For each API route, the data was serialized to meet the spec and then presented to the user in JSON format. (Scroll down to view all endpoints and links to API deployed on heroku.)

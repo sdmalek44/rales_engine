@@ -22,7 +22,7 @@ rake import:all
 - Pry-rails
 - RSpec-rails
 - Shoulda-matchers
-- Simplecov
+- Simplecov  
 
 #### Testing
 This application utilizes RSpec for testing.  

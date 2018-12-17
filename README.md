@@ -29,6 +29,81 @@ rake import:all
 This application utilizes RSpec for testing.  
 In order to execute all tests, run the command `rspec` in the terminal.
 
+### Basic Endpoints  
+  
+#### Merchants  
+
+```GET /api/v1/merchants/:id``` Returns a single merchant with specific id  
+
+```GET /api/v1/merchants/random``` Returns a single merchant at random  
+
+```GET /api/v1/merchants``` Returns a collection of all merchants  
+
+```GET /api/v1/merchants/find_all?id=1&name=Schroeder-Jerde``` Returns all merchants with passed in parameters - id, name  
+
+```GET /api/v1/merchants/find?id=1&name=Schroeder-Jerde``` Returns the first merchant with passed in parameters - id, name  
+
+#### Invoices  
+
+```GET /api/v1/invoices/:id``` Returns a single invoice with specific id  
+
+```GET /api/v1/invoices/random``` Returns a single invoice at random  
+
+```GET /api/v1/invoices``` Returns a collection of all invoices  
+
+```GET /api/v1/invoices/find_all?``` Returns all invoices with passed in parameters - id, status, merchant_id, customer_id  
+
+```GET /api/v1/invoices/find?``` Returns the first invoice with passed in parameters - id, status, merchant_id, customer_id  
+
+#### Invoice_items  
+
+```GET /api/v1/invoice_items/:id``` Returns a single invoice_item with specific id  
+
+```GET /api/v1/invoice_items/random``` Returns a single invoice_item at random  
+
+```GET /api/v1/invoice_items``` Returns a collection of all invoice_items  
+
+```GET /api/v1/invoice_items/find_all?``` Returns all invoice_items with passed in parameters - id, item_id, invoice_id, quantity, unit_price(as decimal)  
+
+```GET /api/v1/invoice_items/find?``` Returns the first invoice_item with passed in parameters - id, item_id, invoice_id, quantity, unit_price(as decimal)  
+
+#### Items  
+
+```GET /api/v1/items/:id``` Returns a single item with specific id  
+
+```GET /api/v1/items/random``` Returns a single item at random  
+
+```GET /api/v1/items``` Returns a collection of all items  
+
+```GET /api/v1/items/find_all?``` Returns all items with passed in parameters - id, name, description, unit_price(as decimal), merchant_id  
+
+```GET /api/v1/Items/find?``` Returns the first Item with passed in parameters - id, name, description, unit_price(as decimal), merchant_id  
+
+#### Transactions  
+
+```GET /api/v1/transactions/:id``` Returns a single transaction with specific id  
+
+```GET /api/v1/transactions/random``` Returns a single transaction at random  
+
+```GET /api/v1/transactions``` Returns a collection of all transactions  
+
+```GET /api/v1/transactions/find_all?``` Returns all transactions with passed in parameters - id, invoice_id, credit_card_number, result  
+
+```GET /api/v1/transactions/find?``` Returns the first transaction with passed in parameters - id, invoice_id, credit_card_number, result  
+
+#### Customers  
+
+```GET /api/v1/customers/:id``` Returns a single customer with specific id  
+
+```GET /api/v1/customers/random``` Returns a single customer at random  
+
+```GET /api/v1/customers``` Returns a collection of all customers  
+
+```GET /api/v1/customers/find_all?``` Returns all customers with passed in parameters - id, first_name, last_name  
+
+```GET /api/v1/customers/find?``` Returns the first customer with passed in parameters - id, first_name, last_name  
+
+
 
 ### Relationship Endpoints
 

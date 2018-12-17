@@ -5,21 +5,21 @@ class Item < ApplicationRecord
   has_many :transactions, through: :invoices
 
   def self.most_sold(quantity = 3)
-    select("items.*, sum(invoice_items.quantity) AS sold_items")
+    select("items.*, sum(invoice_items.quantity) AS item_sales")
     .joins(invoices: :transactions)
     .merge(Transaction.success)
     .group(:id)
-    .order("sold_items DESC")
+    .order("item_sales DESC")
     .limit(quantity)
   end
 
   def self.most_revenue(limit = 3)
-    select('items.*, sum(invoice_items.quantity) AS total_quantity')
-    .joins(:transactions, :invoice_items)
-    .merge(Transaction.success)
-    .group(:id)
-    .order('total_quantity DESC')
-    .limit(limit)
+    select('items.*, sum(invoice_items.quantity * invoice_items.unit_price) AS total_revenue')
+      .joins(invoices: :transactions)
+      .merge(Transaction.success)
+      .group(:id)
+      .order('total_revenue DESC')
+      .limit(limit)
   end
 
   def best_day

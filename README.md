@@ -108,12 +108,12 @@ In order to execute all tests, run the command `rspec` in the terminal.
 ### Relationship Endpoints
 
 
-#### Merchants (https://rales-engine-.herokuapp.com/api/v1/merchants)
+#### Merchants (https://rales-engine-8396.herokuapp.com/api/v1/merchants)
 ```GET /api/v1/merchants/:id/items``` Returns a collection of items associated with that merchant  
 
 ```GET /api/v1/merchants/:id/invoices``` Returns a collection of invoices associated with that merchant from their known orders  
 
-#### Invoices (https://rales-engine-.herokuapp.com/api/v1/invoices)  
+#### Invoices (https://rales-engine-8396.herokuapp.com/api/v1/invoices)  
 
 ```GET /api/v1/invoices/:id/transactions``` Returns a collection of associated transactions  
 
@@ -125,21 +125,21 @@ In order to execute all tests, run the command `rspec` in the terminal.
 
 ```GET /api/v1/invoices/:id/merchant``` Returns the associated merchant  
 
-#### Invoice Items (https://rales-engine-.herokuapp.com/api/v1/invoice_items)
+#### Invoice Items (https://rales-engine-8396.herokuapp.com/api/v1/invoice_items)
 ```GET /api/v1/invoice_items/:id/invoice``` Returns the associated invoice  
 
 ```GET /api/v1/invoice_items/:id/item``` Returns the associated item  
 
-#### Items (https://rales-engine-.herokuapp.com/api/v1/items)
+#### Items (https://rales-engine-8396.herokuapp.com/api/v1/items)
 ```GET /api/v1/items/:id/invoice_items``` Returns a collection of associated invoice items  
 
 ```GET /api/v1/items/:id/merchant``` Returns the associated merchant  
 
-#### Transactions (https://rales-engine-.herokuapp.com/api/v1/transactions)  
+#### Transactions (https://rales-engine-8396.herokuapp.com/api/v1/transactions)  
 
 ```GET /api/v1/transactions/:id/invoice``` Returns the associated invoice  
 
-#### Customers (https://rales-engine-.herokuapp.com/api/v1/customers)  
+#### Customers (https://rales-engine-8396.herokuapp.com/api/v1/customers)  
 
 ```GET /api/v1/customers/:id/invoices``` Returns a collection of associated invoices  
 
@@ -148,7 +148,7 @@ In order to execute all tests, run the command `rspec` in the terminal.
 
 ### Business Intelligence Endpoints
 
-#### All Merchants (https://rales-engine-.herokuapp.com/api/v1/merchants)  
+#### All Merchants (https://rales-engine-8396.herokuapp.com/api/v1/merchants)  
 
 ```GET /api/v1/merchants/most_revenue?quantity=x``` Returns the top x merchants ranked by total revenue  
 
@@ -157,7 +157,7 @@ In order to execute all tests, run the command `rspec` in the terminal.
 ```GET /api/v1/merchants/revenue?date=x``` Returns the total revenue for date x across all merchants  
 
 
-#### Single Merchant (https://rales-engine-.herokuapp.com/api/v1/merchants)  
+#### Single Merchant (https://rales-engine-8396.herokuapp.com/api/v1/merchants)  
 
 ```GET /api/v1/merchants/:id/revenue``` Returns the total revenue for that merchant across successful transactions  
 
@@ -168,17 +168,17 @@ In order to execute all tests, run the command `rspec` in the terminal.
 ```GET /api/v1/merchants/:id/customers_with_pending_invoices``` Returns a collection of customers which have pending (unpaid) invoices 
 
 
-#### All Items (https://rales-engine-.herokuapp.com/api/v1/items)  
+#### All Items (https://rales-engine-8396.herokuapp.com/api/v1/items)  
 
 ```GET /api/v1/items/most_revenue?quantity=x``` Returns the top x items ranked by total revenue generated  
 
 ```GET /api/v1/items/most_items?quantity=x``` Returns the top x item instances ranked by total number sold  
   
-#### Single Item (https://rales-engine-.herokuapp.com/api/v1/items/:id)
+#### Single Item (https://rales-engine-8396.herokuapp.com/api/v1/items/:id)
 
 ```GET /api/v1/items/:id/best_day``` Returns most recent date with the highest number of sales for a given item  
 
-#### Single Customer (https://rales-engine-.herokuapp.com/api/v1/customers)  
+#### Single Customer (https://rales-engine-8396.herokuapp.com/api/v1/customers)  
 
 ```GET /api/v1/customers/:id/favorite_merchant``` Returns a merchant where the customer has conducted the most successful transactions  
 
